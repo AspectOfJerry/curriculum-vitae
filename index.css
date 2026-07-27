@@ -1,13 +1,36 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: block;
+    src: url("assets/fonts/InterVariable.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: block;
+    src: url("assets/fonts/InterVariable-Italic.woff2") format("woff2");
+}
+
 * {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-style: normal;
     line-height: 140%;
     font-feature-settings: "calt" on;
 }
 
+@page {
+    /* width = 8.5 - 2 * margin */
+    /*margin: 0.5in; <- original*/
+    margin: 0.5in;
+}
+
 #cv {
-    width: 8.5in; /* standard letter size */
+    /* width = 8.5 - 2 * margin*/
+    /*width: 7.5in; <- original*/
+    width: 7.5in;
     text-align: left;
     padding-bottom: 8rem; /* looks better on web */
 }
@@ -16,12 +39,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background: white;
     color: black;
+}
+
+/* For larger screens, scale up the CV to make it more readable */
+@media screen and (min-width: 900px) {
+    #cv {
+        /*zoom: 1.1; shifts layout a bit so commented for now*/
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -48,10 +78,10 @@ h1 {
 }
 
 h2 {
-    color: #a6bed9;
+    color: #4a6fa5;
     font-weight: 450;
     font-size: 13pt;
-    margin: 6pt 0 1pt 0;
+    margin: 7pt 0 1pt 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -62,8 +92,8 @@ h2 {
 
 h3 {
     font-size: 12pt;
-    font-weight: 450;
-    margin: 0;
+    font-weight: 500;
+    margin: 1pt 0 0 0;
 }
 
 h4 {
@@ -76,6 +106,7 @@ p, ul, li {
     font-size: 11pt;
     font-weight: 400;
     margin: 0;
+    text-wrap: pretty;
 }
 
 b {
@@ -85,7 +116,11 @@ b {
 ul {
     padding-left: 24px;
     list-style-type: square;
-    margin-bottom: 3pt;
+    margin-bottom: 0;
+}
+
+li {
+    margin-bottom: 2pt;
 }
 
 hr {
@@ -125,11 +160,6 @@ button {
     /*}*/
 }
 
-span.special {
-    color: #003366;
-    font-weight: 400;
-}
-
 @media (prefers-color-scheme: dark) {
     span.special {
         color: #a6bed9;
@@ -166,11 +196,51 @@ a:visited {
     }
 }
 
+.footer {
+    text-align: right;
+    font-size: 9pt;
+    letter-spacing: 0.01em;
+    color: #b3b3b3;
+    margin-top: 10pt;
+}
+
+@media (prefers-color-scheme: dark) {
+    .footer {
+        color: #555555;
+    }
+}
+
 @media print {
     .media-control {
         display: none;
     }
 
+    .footer {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 0;
+    }
+
+    /* region fix from claude */
+    body {
+        background: white !important;
+        color: black !important;
+    }
+
+    a, a:visited {
+        color: black !important;
+    }
+
+    h2 {
+        color: #4a6fa5 !important;
+    }
+
+    h2.page-break {
+        break-before: page;
+    }
+
+    /* endregion */
     #cv {
         padding: 0;
     }
@@ -187,6 +257,11 @@ a:visited {
         page-break-inside: avoid;
     }
 
+    p, li {
+        orphans: 2;
+        widows: 2;
+    }
+
     .flex-container {
         display: table !important;
         width: 100%;
@@ -201,6 +276,9 @@ a:visited {
         break-inside: avoid !important;
     }
 
+    /*.flex-item + .flex-item {*/
+    /*    padding-left: 0.25in;*/
+    /*}*/
     .flex-item h2 {
         page-break-after: avoid !important;
         break-after: avoid !important;

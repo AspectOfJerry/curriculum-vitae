@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/InterVariable.woff2">
 
     <meta charset="UTF-8">
     <title>Curriculum vitae - Jerry</title>
@@ -32,8 +30,8 @@
         </div>
 
         <div class="flex-item" style="margin-top: 0.25rem;">
-            <p>Montreal, QC, Canada | French, English, Mandarin</p>
-            <p><a href="mailto:jerryfu_mc@outlook.com">jerryfu_mc@outlook.com</a> | <a href="tel:+14382258853">+1 (438) 225-8853</a> | <a
+            <p>Montreal, QC, Canada · French, English, Mandarin</p>
+            <p><a href="mailto:jerryfu_mc@outlook.com">jerryfu_mc@outlook.com</a> · <a href="tel:+14382258853">+1 (438) 225-8853</a> · <a
                 href="https://jerryxf.net" target="_blank">jerryxf.net</a>
             </p>
         </div>
@@ -41,7 +39,7 @@
 
     <hr style="margin: 3px 0 0 0;">
 
-    <p style="margin-top: 1px;">Student building intelligent systems across robotics, medicine, and AI.</p>
+    <i style="margin-top: 1px; font-size: 11pt">Student building intelligent systems across robotics, medicine, and AI.</i>
 
     <!-- EDUCATION -->
     <h2>Education</h2>
@@ -50,52 +48,63 @@
 
     <!-- RESEARCH EXPERIENCE -->
     <h2>Research Experience</h2>
-    <h3><span class="year">2025-present</span> CHUM Research Center – Research Assistant and Clinical Observership</h3>
+    <h3><span class="year">2025–present</span> CHUM Research Center – Research Assistant</h3>
     <ul>
         <li>
-            Analyzed regional pleural strain via lung ultrasound elastography to establish normative values and their correlations with tidal volume in healthy
-            volunteers.
+            Processed lung ultrasound elastography sequences, segmented the pleural line, ran strain analysis in MATLAB, and debugged processing scripts.
+            Contributed to normative regional pleural strain values and their correlation with tidal volume.
         </li>
         <li>
-            Shadowed in the Intensive Care Unit (ICU) and Operating Room; exposure to anesthesia, critical care, and surgical workflows.
+            Calibrated spirometry equipment and assisted during volunteer sessions. Tuned ultrasound acquisition parameters for a follow-on biplanar-probe
+            study.
+        </li>
+        <li>
+            Observed in the Operating Room and Intensive Care Unit at the CHUM: cardiac surgery with cardiopulmonary bypass, intraoperative
+            transesophageal echocardiography, epidural placement, intubation, continuous renal replacement therapy, and more.
         </li>
     </ul>
 
     <!-- PUBLICATIONS/ABSTRACTS -->
     <h2>Publications/Abstracts</h2>
-    <h4>CHUM Research Center - SFAR Congress</h4>
     <ul>
         <li>
-            <i style="font-style: italic;">Relation entre la déformation pleurale régionale mesurée par élastographie pulmonaire et le volume
-                courant chez des volontaires sains.</i> S.&#8239;Chraïbi, K.&#8239;El&#8239;Berhoumi, A.&#8239;Danatoiu, <b>J.&#8239;Fu</b>, P.&#8239;Vianna,
-            M.H.&#8239;Roy&#8239;Cardinal, G.&#8239;Cloutier, M.&#8239;Girard (presenting author). Presented at the 2025 Annual
-            Congress of the French Society of Anesthesia and Critical Care (SFAR) on Sep 17, 2025, in Paris, France.
+            <span class="year">Sep 2025 · CHUM Research Center</span> <i style="" lang="fr">Relation entre la déformation pleurale régionale
+            mesurée par élastographie pulmonaire et le volume courant chez des volontaires sains.</i> S.&#8239;Chraïbi, K.&#8239;El&#8239;Berhoumi, A.&#8239;Danatoiu,
+            <b>J.&#8239;Fu</b>, P.&#8239;Vianna, M.H.&#8239;Roy&#8239;Cardinal, G.&#8239;Cloutier, M.&#8239;Girard (presenting author). Annual Congress of the
+            French Society of Anesthesia and Critical Care (SFAR), Paris, France.
         </li>
     </ul>
 
     <!-- WORK EXPERIENCE -->
     <h2>Work Experience</h2>
-    <h3><span class="year">2026</span> Unveil Technologies – Founder & Lead Developer</h3>
+
+    <h3><span class="year">2023–present</span> DODO Wheels / PublicoTires – Software Developer</h3>
     <ul>
-        <li>Designed and built ORCA, an operational intelligence platform that fuses multi-source data into a live, explainable operational picture for decision
-            support — <a href="https://unveiltechnologies.com/" target="_blank">https://unveiltechnologies.com</a>
+        <li>
+            Collaborating with a small team to build a centralized operations platform unifying warehouse stock, inventory, invoicing, customer, and product
+            management across the company (in progress).
         </li>
         <li>
-            Architected a distributed pipeline ingesting telemetry, sensor, and radio data through NATS, a streaming entity graph, and vector search — producing
-            real-time, cited intelligence assessments.
+            Built an OAuth 2.0 integration layer between the company website and QuickBooks Online, enabling programmatic management of invoices, customers,
+            inventory, and more.
         </li>
         <li>
-            Led design, branding, and a TRL-3 funding proposal for the Canadian DND/CAF IDEaS program.
+            Automated the migration of 3,000+ products and images to the new system via a web scraper.
+        </li>
+        <li>
+            <span class="year">2024</span> Developed the Doublestar Tire Canada website — <a href="https://doublestartyre.ca/"
+                                                                                             target="_blank">doublestartyre.ca</a>
         </li>
     </ul>
-    <h3><span class="year">2022–present</span> FIRST Robotics Competition – Mentor & former Student of Team 3990</h3>
+
+    <h3><span class="year">2022–present</span> FIRST Robotics Competition – Mentor &amp; former Student of Team 3990</h3>
     <ul>
         <li>
-            Created coursework and lectured programming, computer vision and AI/ML to junior team members.
+            Created coursework and taught programming, computer vision and AI/ML to junior team members.
         </li>
-        <li>
-            Prepared a whitepaper on computer vision in robotics.
-        </li>
+        <!--        <li>-->
+        <!--            Prepared a whitepaper on computer vision in robotics.-->
+        <!--        </li>-->
         <li>
             Developed computer vision object tracking and autonomous behaviors on the robot.
         </li>
@@ -104,41 +113,42 @@
         </li>
     </ul>
 
-    <h3><span class="year">2023-2024</span> DODO Wheels – Sole Software Developer</h3>
-    <ul>
-        <li>
-            2024 summer | Developed Doublestar Tire's Canadian website — <a href="https://doublestartyre.ca/" target="_blank">https://doublestartyre.ca</a>
-        </li>
-        <li>
-            2023 summer | Managed, updated, and populated internal inventory through CPanel.
-        </li>
-    </ul>
-
     <!-- VOLUNTEER EXPERIENCE -->
     <h2>Volunteer Experience</h2>
     <ul>
         <li>
-            2025: Developed a score-tracking application for our in-house off-season robotics competitions.
+            <span class="year">2025</span> Developed a score-tracking application for our in-house off-season robotics competitions.
         </li>
         <li>
-            2024: Volunteered at our in-house FIRST event and presented our robotics program.
+            <span class="year">2024</span> Volunteered at our in-house FIRST event and presented our robotics program.
         </li>
         <li>
-            2025: <i style="font-style: italic;">Anges Gardiens</i> volunteer; peer guidance to new students at Collège Regina Assumpta.
+            <span class="year">2025</span> <i style="">Anges Gardiens</i> volunteer; peer guidance to new students at Collège Regina
+            Assumpta.
         </li>
         <li>
-            2025: Volunteer photographer for dance show at Collège Regina Assumpta in intricate lighting.
+            <span class="year">2025</span> Volunteer photographer for dance show at Collège Regina Assumpta in intricate lighting.
         </li>
     </ul>
 
     <!-- patch for firefox ignoring no page break for exporting to pdf -->
-    <!--    <div style="height:49px"></div>-->
+    <div style="height:23px"></div>
 
     <!-- EXTRACURRICULARS & Notable Projects -->
     <h2>Extracurriculars/Notable Projects</h2>
     <ul>
         <li>
-            <b>Medical Inference via Vector Embedding</b> – Personal research project developing an AI system using vector embeddings to model symptom–condition
+            <span class="year">2026</span> <b>WRCC Brain–Computer Interface Competition</b> – Contributed to an EEG motor-imagery classifier using a Riemannian
+            geometry pipeline on four channels, averaging 77% accuracy across four binary tasks. Qualified for the finals.
+        </li>
+        <li>
+            <span class="year">2025–2026</span> <b>ORCA – Operational Intelligence Platform</b> – Designed a distributed pipeline ingesting telemetry, sensor,
+            and radio data through a streaming entity graph to produce real-time, cited assessments. Prepared a TRL-3 proposal for the Canadian DND/CAF IDEaS
+            program.
+        </li>
+        <li>
+            <span class="year">2025–2026</span> <b>Medical Inference via Vector Embedding</b> – Personal research project developing an AI system using vector
+            embeddings to model symptom–condition
             relationships for disease prediction.
         </li>
         <li>
@@ -149,8 +159,8 @@
         <!--            <span class="year">2025-2026</span> <b>CRC Robotics</b> – Led the programming team and developed autonomous systems.-->
         <!--        </li>-->
         <li>
-            <span class="year">2024 & 2025</span> <b><i style="font-style: italic;">Secondaire en spectacle</i></b> Performed piano-comedy skits with a friend,
-            400+ audience. Local winner.
+            <span class="year">2024 &amp; 2025</span> <b><i style="">Secondaire en spectacle</i></b> Performed piano-comedy skits with a
+            friend, 400+ audience. Local winner.
         </li>
     </ul>
 
@@ -159,11 +169,9 @@
             <!--Programming Skills-->
             <h2>Programming Skills</h2>
             <ul>
-                <li><b>General</b>: JavaScript/TypeScript, Python, MATLAB</li>
-                <li><b>Robotics</b>: Java, Python</li>
-                <li><b>App development</b>: Kotlin Multiplatform, SwiftUI</li>
-                <li><b>AI/ML</b>: PyTorch, OpenCV, computer vision</li>
-                <li><b>Web development</b>: React, HTML, SCSS, OAuth</li>
+                <li><b>Languages</b>: TypeScript/JS, Python, Java, Kotlin, Swift, MATLAB</li>
+                <li><b>Frameworks &amp; Libraries</b>: React, PyTorch, OpenCV, WPILib, Kotlin Multiplatform, SwiftUI</li>
+                <li><b>Infrastructure</b>: Docker, Cloudflare, GCP, OAuth 2.0</li>
             </ul>
         </div>
         <div class="flex-item">
@@ -173,7 +181,6 @@
                 <li>Hands-on experience with tools, electronics, and machines</li>
                 <li>Basic CAD (Onshape, Autodesk Inventor)</li>
                 <li>Photography and Adobe Lightroom</li>
-                <li>Proficient with Office suite</li>
             </ul>
         </div>
     </div>
@@ -192,14 +199,15 @@
     <!--    </div>-->
 
     <!-- Row layout -->
-    <div class="flex-item">
-        <!-- CERTIFICATIONS -->
-        <h2>Certifications</h2>
-        <ul>
-            <li>Good Clinical Practice (CITI), Éthique de la recherche (MSSS), Responsible Conduct of Research</li>
-            <li><b>Canadian Red Cross</b>: Standard First Aid Level & CPR/AED Level C, Psychological First Aid</li>
-        </ul>
-    </div>
+    <!-- CERTIFICATIONS -->
+    <h2>Certifications</h2>
+    <ul>
+        <li>Good Clinical Practice (CITI), Éthique de la recherche (MSSS), Responsible Conduct of Research</li>
+        <li><b>Canadian Red Cross</b>: Standard First Aid &amp; CPR/AED Level C, Psychological First Aid</li>
+    </ul>
+
+    <!-- FOOTER -->
+    <p class="footer">Jerry Fu&#8239;·&#8239;2026.07</p>
 </main>
 <script>
     document.getElementById('print-button').addEventListener('click', function () {
