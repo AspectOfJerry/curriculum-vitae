@@ -1,18 +1,20 @@
 [cv.jerryxf.net](https://cv.jerryxf.net)
 
-Don't forget to update the `.pdf` in the root before pushing a new version
+Don't forget to update the `.pdf` in the root before pushing a new version.
+
+EXPORT PDF USING CHROME FOR MAXIMUM COMPATIBILITY.
 
 Latest updated date in footer:
 
 ```html
-<p class="footer">Jerry Fu&#8239;·&#8239;2026.07</p>
+<p class="footer">Jerry Fu&#8239;·&#8239;2026.9</p>
 ```
 
-En Dash (–): Used for number ranges
-Em Dash (—): Used to create a dramatic pause or insert an extra thought into a sentence
-Hyphen (-): Used to join words or parts of words together
+- En Dash (–): Used for number ranges
+- Em Dash (—): Used to create a dramatic pause or insert an extra thought into a sentence
+- Hyphen (-): Used to join words or parts of words together
 
-`·` middle dot (·)
-`&amp;` escaped ampersand (&)
-`&#8239` narrow no-break space ()
-`&nbsp;` non-breaking space ( )
+- `·` middle dot (·)
+- `&amp;` escaped ampersand (&)
+- `&#8239` narrow no-break space ()
+- `&nbsp;` non-breaking space ( )
